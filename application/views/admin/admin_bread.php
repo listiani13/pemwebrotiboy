@@ -63,7 +63,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<a href="admin_input_type.html">
 					<button class="btn btn-biru" style="height:37px;width:165px"> <i class="fa fa-plus" aria-hidden="true" style="margin-right:10px"></i>
 					ADD TYPE BREAD </button></a>
-					<a href="admin_input_bread.html">
 					
 				</div>
 				

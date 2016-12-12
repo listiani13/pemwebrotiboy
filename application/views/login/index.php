@@ -47,7 +47,7 @@ if(isset($_SESSION['level'])){
 </head>
 <body>
 
-<form action="Login/aksi_login" method="post">
+<form action="<?php echo base_url();?>index.php/Login/aksi_login" method="post">
 <div style="margin-left:35%;margin-top:10%;padding:1px 3px;height:500px;padding-right:0%">
 	<div class="container-fluid" style="padding:0%;">
 		<div class="col-lg-5" style="background-color:white;">
