@@ -1,12 +1,12 @@
-<?php
-session_start();
+<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+
 # kalo udah login ga bisa kesini
 if(isset($_SESSION['admin'])){
-	/*header("Location: logout.php");*/
-	echo "<script type='text/javascript'>window.location.href = 'admin_account.php';</script>";
+	/*
+	echo "<script type='text/javascript'>window.location.href = 'admin_account.php';</script>";*/
 }
 elseif (isset($_SESSION['kasir'])) {
-	echo "<script type='text/javascript'>window.location.href = 'sales_transaction.php';</script>";
+	/*echo "<script type='text/javascript'>window.location.href = 'sales_transaction.php';</script>";*/
 }
 ?>
 <!DOCTYPE html>
@@ -51,7 +51,7 @@ elseif (isset($_SESSION['kasir'])) {
 </head>
 <body>
 
-<form action="sales_acc.php" method="POST">
+<form action="Login/aksi_login" method="post">
 <div style="margin-left:35%;margin-top:10%;padding:1px 3px;height:500px;padding-right:0%">
 	<div class="container-fluid" style="padding:0%;">
 		<div class="col-lg-5" style="background-color:white;">
@@ -97,7 +97,7 @@ elseif (isset($_SESSION['kasir'])) {
 				</div>
 			</div>
 			<div class="row text-right" style="padding-top:5%;padding-right:6%">
-					<button class="btn btn-biru" name="login" > SUBMIT </button>
+					<button class="btn btn-biru" name="login" type="submit" value="Login"> SUBMIT </button>
 			</div>	
 		</div>	
 </div>
@@ -123,7 +123,7 @@ elseif (isset($_SESSION['kasir'])) {
 <?php
 	/*$username = "root";
 	$password = "";
-	$conn = new PDO ('mysql:host=localhost; dbname=transaksi_roti', $username, $password);*/
+	$conn = new PDO ('mysql:host=localhost; dbname=transaksi_roti', $username, $password);
 	include 'koneksi.php';
 	if (isset($_POST['login']))
 	{
@@ -133,11 +133,9 @@ elseif (isset($_SESSION['kasir'])) {
 			$username =$_POST['username'];
 			$pass = $_POST['password'];
 			
-			/*$stmt = $conn -> prepare("SELECT * FROM login WHERE username = '$username'");*/
 			$stid = oci_parse($conn, "SELECT * FROM login WHERE username = '$username'");
 			oci_execute($stid);
 			$row = oci_fetch_array($stid, OCI_BOTH);
-			/*$row = $stmt -> fetch();*/
 			
 			$pass_salt = $pass . $row['SALT'];
 			$hash = md5($pass_salt);
@@ -172,7 +170,7 @@ elseif (isset($_SESSION['kasir'])) {
 			}
 			
 		}
-	}
+	}*/
 
 ?>
   </div>
