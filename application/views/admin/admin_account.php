@@ -51,7 +51,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   <li><a class="text-center paddingnav putih" href="Admin/report">
   <span><img src="<?php echo base_url(); ?>/assets/assets/list.svg" style="margin-bottom:10px;width:40%"></span>
   Report </a></li>
-  <li><a class="active text-center paddingnav putih tebal" href="admin_account.html"><i class="fa fa-users fa-lg putih" aria-hidden="true" style="margin-bottom:10px"></i>
+  <li><a class="active text-center paddingnav putih tebal" href="#"><i class="fa fa-users fa-lg putih" aria-hidden="true" style="margin-bottom:10px"></i>
   Account</a></li>
   <li><a class="text-center paddingnav putih" href="Admin/bread">
   <span><img src="<?php echo base_url(); ?>/assets/assets/bread.svg" style="margin-bottom:3px;width:55%"></span>
@@ -67,7 +67,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<div class="kotakbiru"></div>
 			<div class="row" style="padding:3%;padding-left:0%;padding-top:1%">
 				<div class="row text-right" style="margin-left:1%;margin-right:1%;margin-bottom:1%">
-					<a href="admin_input_level.html"><button class="btn btn-biru" style="height:37px;width:165px;margin-right:0.5%">
+					<a href="#"><button class="btn btn-biru" style="height:37px;width:165px;margin-right:0.5%">
 					<i class="fa fa-plus" aria-hidden="true" style="margin-right:10px"></i>ADD LEVEL USER 
 					</button></a>
 				</div>
@@ -95,7 +95,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       </div>
       <div class="modal-footer">
 		<button type="button" class="btn btn-biruout" data-dismiss="modal">CANCEL</button>
-        <a href="admin_account.html"><button type="button" class="btn btn-biru">SUBMIT</button></a>
+        <a href="Admin"><button type="button" class="btn btn-biru">SUBMIT</button></a>
       </div>
     </div>
 

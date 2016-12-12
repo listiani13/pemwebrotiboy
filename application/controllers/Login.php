@@ -17,6 +17,10 @@ class Login extends CI_Controller {
 		$password = $this->input->post('password');
 		$level = $this->input->post('level');
 
+		/*echo $username;
+		echo md5($password);
+		echo $level;*/
+
 		$where = array(
 			'username' => $username,
 			'pass' => md5($password),
@@ -24,6 +28,8 @@ class Login extends CI_Controller {
 			);
 
 		$cek = $this->m_login->cek_login("login",$where)->num_rows();
+
+		//echo $cek;
 		if($cek > 0){
 
 			$data_session = array(
@@ -34,7 +40,7 @@ class Login extends CI_Controller {
 
 			$this->session->set_userdata($data_session);
 
-			redirect("Admin");
+			redirect("Login");
 
 		}else{
 			echo "Username/password/level salah !";

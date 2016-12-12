@@ -42,12 +42,12 @@
   <li><a class="active  text-center paddingnav putih tebal" href="admin_report.php">
   <span><img src="../../assets/assets/list.svg" style="margin-bottom:10px;width:40%"></span>
   Report </a></li>
-  <li><a class="text-center paddingnav putih" href="admin_account.php"><i class="fa fa-users fa-lg putih" aria-hidden="true" style="margin-bottom:10px"></i>
+  <li><a class="text-center paddingnav putih" href="../"><i class="fa fa-users fa-lg putih" aria-hidden="true" style="margin-bottom:10px"></i>
   Account</a></li>
-  <li><a class="text-center paddingnav putih" href="admin_bread.php">
+  <li><a class="text-center paddingnav putih" href="bread">
   <span><img src="../../assets/assets/bread.svg" style="margin-bottom:3px;width:55%"></span>
   Bread</a></li>
-  <li><a class="text-center paddingnav putih" href="Login/logout"><i class="fa fa-sign-out fa-lg putih" aria-hidden="true" style="margin-bottom:10px"></i>
+  <li><a class="text-center paddingnav putih" href="../Login/logout"><i class="fa fa-sign-out fa-lg putih" aria-hidden="true" style="margin-bottom:10px"></i>
   Signout</a></li>
 </ul>
 

@@ -12,7 +12,7 @@ if(isset($_SESSION['level'])){
 	}
 	else
 	{
-		echo "<script type='text/javascript'>window.location.href = 'Warehouse';</script>";
+		echo "<script type='text/javascript'>window.location.href = 'KendaliRoti';</script>";
 	}
 }
 
@@ -79,6 +79,7 @@ if(isset($_SESSION['level'])){
 							<option value="0">Pilih Level User</option>
 							<option value="1">Administrator</option>
 							<option value="2">Kasir</option>
+							<option value="3">Warehouse</option>
 						</select>
 					</div>
 				</div>
