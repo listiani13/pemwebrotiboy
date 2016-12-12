@@ -56,7 +56,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   <li><a class="text-center paddingnav putih" href="Admin/bread">
   <span><img src="<?php echo base_url(); ?>/assets/assets/bread.svg" style="margin-bottom:3px;width:55%"></span>
   Bread</a></li>
-  <li><a class="text-center paddingnav putih" href="admin_bread.html"><i class="fa fa-sign-out fa-lg putih" aria-hidden="true" style="margin-bottom:10px"></i>
+  <li><a class="text-center paddingnav putih" href="Login/logout"><i class="fa fa-sign-out fa-lg putih" aria-hidden="true" style="margin-bottom:10px"></i>
   Signout</a></li>
 </ul>
 
