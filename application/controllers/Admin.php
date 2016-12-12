@@ -48,7 +48,11 @@ class Admin extends CI_Controller {
         // tampilkan di view 
         $this->load->view('admin/admin_bread', $output);
 	}
+
 	public function report(){
-		$this->load->view('admin/admin_report');
+		$this->load->model('Admin_model');
+    	$data["reportList"] = $this->Admin_model->getReport();
+		$this->load->view('admin/admin_report', $data);
 	}
+
 }
